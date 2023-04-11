@@ -88,6 +88,10 @@ function startTimer() {
     },1000);
 }
 
+
+function endQuiz () {
+
+}
 //  Questions using the Array
 
 var questions = [
