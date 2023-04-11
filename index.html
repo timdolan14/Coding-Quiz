@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Coding Quiz - Tim Dolan</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    </head>
-    
-    
-    <main> 
-      <header> 
-        <div id="timer" class="timer">60</div>
-          <h3>seconds remaining</h3>
-      </header>
 
-    <body>
-        <div class ="Welcome">
-          <div id= "Welcome-Status"> Lets Go Mets!</div>
-        <h1>Welcome to Mets Trivia!</h1>
-        <p>
-          You will have 60 seconds to complete this quiz.
-        </p>
-        <div class = "container">
-          <button id="Start" class ="start-btn btn">Start Quiz!</button>
-        </div>
-      </section>  
+<head>
+  <title>Coding Quiz - Tim Dolan</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
 
-      <div id ="question-container" class="hide">
+
+<main>
+  <header>
+    <div id="timer" class="timer">60</div>
+    <h3>seconds remaining</h3>
+  </header>
+
+  <body>
+    <div class="Welcome">
+      <div id="Welcome-Status"> Lets Go Mets!</div>
+      <h1>Welcome to Mets Trivia!</h1>
+      <p>
+        You will have 60 seconds to complete this quiz.
+      </p>
+      <div class="container">
+        <button id="Start" class="start-btn btn">Start Quiz!</button>
+      </div>
+      </section>
+
+      <div id="question-container" class="hide">
         <h2 id="question">Question</h2>
-        <div id ="answer-btn" class="MC">
+        <div id="answer-btn" class="MC">
           <!-- <button class="btn">A</button>
           <button class="btn">B</button>
           <button class="btn">C</button>
           <button class="btn">D</button> -->
         </div>
         <h2 id="Check" class="Yes-No"></h2>
-      <div class="Button">
-        <button id="nxt-btn" class="hide">Next</button>
+        <div class="Button">
+          <button id="nxt-btn" class="hide">Next</button>
+        </div>
       </div>
     </div>
       <section id="score" class="hide">
         <form id="submit-form">
           <h3 id="your-score"></h3>
           <div class="Button">
-            <label id="initials"> Enter your Initials Here</label>
+            <label id="initials"> Enter your Initials Here:</label>
             <input type="text" id="initial-field" maxlength="2" placeholder="Enter:" />
             <button id="Submit" class="sub-btn">Submit</button>
-          </div> 
+          </div>
         </form>
       </section>
       </section>
-    </body>
-    <script src="./script.js"></script>
-  </main>
-    
-    </html>
+  </body>
+  <script src="./script.js"></script>
+</main>
+
+</html>

@@ -6,10 +6,11 @@ var answerBtnEl = document.getElementById("answer-btn")
 var optionsEl = document.getElementById("options");
 // var answer = document.getElementById("answer");
 var startBtn = document.getElementById("Start")
-var submit = document.getElementById("submit-form");
+var submit = document.getElementById("score");
 var nextBtn = document.getElementById("nxt-btn");
 var nameEl = document.getElementById("initials");
 var timerEl = document.getElementById("timer");
+var welcomeEl = document.querySelector(".Welcome");
 var timerCount = 60;
 var timer;
 
@@ -51,12 +52,12 @@ function setNextQuestion() {
     }
 }
 
-function showQuestion (question) {
-
-}
-
 function selectAnswer (event) {
     var buttonEl = event.target;
+    if (currentQuestionIndex >= 4){
+        console.log("End of quiz");
+        endQuiz();
+    }
     console.log(questions[currentQuestionIndex].correctAnswer)
     if (buttonEl.value !== questions[currentQuestionIndex].correctAnswer){
         timerCount -= 15;
@@ -93,19 +94,22 @@ function endQuiz () {
     console.log("End");
     submit.classList.add("hide");
     questionsContainerEl.classList.add("hide");
+    welcomeEl.classList.add("hide");
+    submit.classList.remove("hide");
     console.log("End quiz");
 }
+
 //  Questions using the Array
 
 var questions = [
     {  
         question: "What year were the New York Mets founded?",
-        answers: ["1922", "1942", "1962","1902"],
+        answers: ["1922", "1942", "1962", "1902"],
         correctAnswer: "1962"
     },
 
     {   question: "What does Mets stand for?",
-        answers: ["MetalWorks","Methaphors", "Metropolitans","Meteors"],
+        answers: ["MetalWorks", "Metropolitans", "Methaphors", "Meteors"],
         correctAnswer: "Metropolitans"
 
     },
@@ -120,14 +124,14 @@ var questions = [
     {
 
         question: "Which Mets player broke the MLB rookie home run record?",
-        answers: ["Jeff McNeil", "Carlos Beltrain", "Pete Alonso", "John Shea"],
+        answers: ["Jeff McNeil", "Carlos Beltrain", "John Shea", "Pete Alonso"],
         correctAnswer: "Pete Alonso"
 
     },
 
     {
         question: "Who was the first New York Mets pitcher to throw a no-hitter?",
-        answers: ["Doc", "Tom Seaver", "Johan Santana", "John Shea"],
+        answers: ["Johan Santana","Doc", "Tom Seaver", "Jeff Bagwell"],
         correctAnswer: "Johan Santana"
     }]
        
