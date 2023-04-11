@@ -1,0 +1,90 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(241, 237, 237);
+}
+/* Element Selector */
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+}
+
+/* Timer */
+header {
+    color: black;
+    font-size: 20px;
+}
+
+h3 {
+    color: black;
+    font-size: 15px;
+}
+
+
+/* Message above Header */
+#Welcome-Status {
+    color: orange
+}
+
+/* Main Header */
+h1 {
+    color: blue;
+    font-size: 32px;;
+}
+
+/* "Questions */
+h2 {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+/* Answer Grid  */
+.MC {
+    display: grid;
+    gap: 25px;
+    margin: 10px;
+    width: auto;
+}
+
+/* Buttons */
+button {
+    Border: light black;
+    width: auto;
+    color: black;
+    height: 50px;
+}
+
+button:hover {
+    box-shadow: inset 0px 0px 30px rgb(168, 164, 164), 0 0 30px rgb(168, 164, 164)
+}
+
+.btn.correct {
+    background-color: green;
+    color: white;
+}
+
+.btn.wrong {
+    background-color: red;
+    color: white;
+}
+
+.start-btn,
+#nxt-btn {
+    background-color: green;
+    font: white;
+    font-weight: 400;
+    margin-top: 40px;
+    height: 40px;
+    width: 75px;
+}
+
+.hide {
+    display: none;
+}
