@@ -6,7 +6,7 @@ var answerBtnEl = document.getElementById("answer-btn")
 var optionsEl = document.getElementById("options");
 // var answer = document.getElementById("answer");
 var startBtn = document.getElementById("Start")
-var submitBtn = document.getElementById("x");
+var submit = document.getElementById("submit-form");
 var nextBtn = document.getElementById("nxt-btn");
 var nameEl = document.getElementById("initials");
 var timerEl = document.getElementById("timer");
@@ -23,7 +23,6 @@ function startQuiz () {
     console.log("Started");
     startBtn.classList.add("hide")
     questionsContainerEl.classList.remove("hide")
-    nextBtn.classList.remove("hide")
     console.log("next button")
     console.log("questions show")
     quizQuestions = questions.sort()
@@ -88,9 +87,13 @@ function startTimer() {
     },1000);
 }
 
+//  End Quiz
 
 function endQuiz () {
-
+    console.log("End");
+    submit.classList.add("hide");
+    questionsContainerEl.classList.add("hide");
+    console.log("End quiz");
 }
 //  Questions using the Array
 
