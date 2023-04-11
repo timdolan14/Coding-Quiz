@@ -101,34 +101,28 @@ var questions = [
         answers: ["MetalWorks","Methaphors", "Metropolitans","Meteors"],
         correctAnswer: "Metropolitans"
 
+    },
+
+    {
+        question: "Which ballpark did the Mets call home from 1964 to 2008?",
+        answers: ["Hilltop Park", "Polo Grounds", "Shea Stadium", "Ebbets Field"],
+        correctAnswer: "Shea Stadium"
+
+    },
+
+    {
+
+        question: "Which Mets player broke the MLB rookie home run record?",
+        answers: ["Jeff McNeil", "Carlos Beltrain", "Pete Alonso", "John Shea"],
+        correctAnswer: "Pete Alonso"
+
+    },
+
+    {
+        question: "Who was the first New York Mets pitcher to throw a no-hitter?",
+        answers: ["Doc", "Tom Seaver", "Johan Santana", "John Shea"],
+        correctAnswer: "Johan Santana"
     }]
-
-    // {
-    //     question: "Which ballpark did the Mets call home from 1964 to 2008?",
-    //     answers: ["Hilltop Park", "Polo Grounds", "Shea Stadium", "Ebbets Field"],
-
-    // ]
-    // },
-
-    // {
-    // question: "Which Mets player broke the MLB rookie home run record?",
-    // answers: [
-    //     {text: "Jeff McNeil", correct: false},
-    //     {text: "Carlos Beltrain", correct: false},
-    //     {text: "Pete Alonso", correct: true},
-    //     {text: "John Shea", correct: false}
-    // ]
-        
-    // },
-
-    // {
-    // question: "Who was the first New York Mets pitcher to throw a no-hitter?",
-    // answers: [
-    //     {text: "Doc", correct: false},
-    //     {text: "Tom Seaver", correct: false},
-    //     {text: "Johan Santana", correct: true},
-    //     {text: "John Shea", correct: false}
-    // }]
        
   
  
