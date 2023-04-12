@@ -4,7 +4,8 @@
 
 https://timdolan14.github.io/LGM/
 
-![Screenshot 2023-04-12 at 3 55 31 PM](https://user-images.githubusercontent.com/128433023/231570125-2343f5a5-7802-4e40-a9e7-40cd3fa411d4.png)
+![Screenshot 2023-04-12 at 3 57 31 PM](https://user-images.githubusercontent.com/128433023/231570541-cd99a32c-5b6f-4153-b48b-3f997154246c.png)
+
 
 ## Github Repo
 
