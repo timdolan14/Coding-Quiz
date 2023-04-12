@@ -51,7 +51,7 @@ function setNextQuestion() {
 
 function selectAnswer (event) {
     var buttonEl = event.target;
-    if (currentQuestionIndex >= 4){
+    if (currentQuestionIndex >= 5){
         console.log("End of quiz");
         endQuiz();
     }
@@ -136,12 +136,17 @@ var questions = [
 
     {
         question: "Who was the first New York Mets pitcher to throw a no-hitter?",
-        answers: ["Johan Santana","Doc", "Tom Seaver", "Jeff Bagwell"],
+        answers: ["Johan Santana", "Doc", "Tom Seaver", "Jeff Bagwell"],
         correctAnswer: "Johan Santana"
-    }]
+    },
+
+    {   question: "Who is the Mets' all-time leader in triples and stolen bases?",
+        answers: ["Jose Reyes", "David Wright", "Mookie Wilson", "Howard Johnson"],
+        correctAnswer: "Jose Reyes"
+
+    }]   
        
-  
- 
+
      // Event Listners for Starting the Quiz
 
 startBtn.addEventListener("click", startQuiz);
