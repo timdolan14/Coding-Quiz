@@ -4,7 +4,7 @@ var questionsContainerEl = document.getElementById("question-container")
 var questionsEl = document.getElementById("question")
 var answerBtnEl = document.getElementById("answer-btn")
 var optionsEl = document.getElementById("options");
-// var answer = document.getElementById("answer");
+var changingTimer = document.getElementById("changing-timer");
 var startBtn = document.getElementById("Start")
 var submit = document.getElementById("score");
 var nextBtn = document.getElementById("nxt-btn");
@@ -29,13 +29,8 @@ function startQuiz () {
     quizQuestions = questions.sort()
     currentQuestionIndex = 0
     timerCount = 60;
-    startTimer()
-    setNextQuestion()
-    // timerCount = 60;
-    // startBtn.disabled = true;
-    // showQuestions ();
-    // startTimer ();
-
+    startTimer();
+    setNextQuestion();
 }
 
 function setNextQuestion() {
@@ -49,6 +44,7 @@ function setNextQuestion() {
         choicebtn.setAttribute('value', choice);
         choicebtn.textContent = choice
         answerBtnEl.append(choicebtn);
+        startTimer();
     }
 }
 
@@ -71,9 +67,10 @@ function selectAnswer (event) {
     currentQuestionIndex++;
     if (timer <= 0 || currentQuestionIndex === questions.length) {
         // call the function to display final score screen
+        endQuiz();
     }
     else {
-        setNextQuestion()
+        setNextQuestion();
     }
 }
 
@@ -81,11 +78,16 @@ function selectAnswer (event) {
 function startTimer() {
     timerEl= setInterval(function () {
     timerCount--;
-    timerEl.textContent = timerCount;
-        if (timerCount === 0) {
-            clearInterval(timer);
-        }
+    // console.log('seconds only', timerCount--);
+    // console.log(timerCount);
+    // timerEl.textContent = timerCount;
+    changingTimer.textContent= timerCount;
+    if (timerCount <= 0) {
+        clearInterval(timerEl);
+        console.log("here");
+    };
     },1000);
+    // console.log(timerEl);
 }
 
 //  End Quiz
