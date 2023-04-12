@@ -100,6 +100,7 @@ function endQuiz () {
     welcomeEl.classList.add("hide");
     submit.classList.remove("hide");
     nameEl.classList.remove("hide");
+    score.classList.remove("hide");
     console.log("End quiz");
 }
 
