@@ -12,7 +12,7 @@ https://github.com/timdolan14/LGM
 
 ## Description
 
-We were employed with the task to create an intuitive coding quiz that allows the user to answer a series of questions during a finite amount of time. If the user selects an incorrect answer, the timer will decrease by 10 seconds. If the time runs out, the quiz automatically ends. 
+We were given with the task to create an intuitive coding quiz that allows the user to answer a series of questions during a finite amount of time. If the user selects an incorrect answer, the timer will decrease by 10 seconds. If the time runs out, the quiz automatically ends. 
 
 ## Usage
 
