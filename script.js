@@ -3,13 +3,16 @@
 var questionsContainerEl = document.getElementById("question-container")
 var questionsEl = document.getElementById("question")
 var answerBtnEl = document.getElementById("answer-btn")
-var optionsEl = document.getElementById("options");
-var changingTimer = document.getElementById("changing-timer");
+var optionsEl = document.getElementById("options")
+var changingTimer = document.getElementById("changing-timer")
 var startBtn = document.getElementById("Start")
-var submit = document.getElementById("score");
-var nameEl = document.getElementById("initials");
-var timerEl = document.getElementById("timer");
+var submitBtn = document.getElementById("Submit")
+var submit = document.getElementById("submit-form")
+var nameEl = document.getElementById("initials")
+var initialField = document.getElementById("initial-field")
+var timerEl = document.getElementById("timer")
 var welcomeEl = document.querySelector(".Welcome");
+var score = document.getElementById("score")
 var timerCount = 75;
 var timer;
 
@@ -78,13 +81,15 @@ function startTimer() {
     timerCount--;
     // console.log('seconds only', timerCount--);
     // console.log(timerCount);
-    // timerEl.textContent = timerCount;
+    timerEl.textContent = timerCount;
     changingTimer.textContent= timerCount;
     if (timerCount <= 0) {
         clearInterval(timerEl);
         console.log("here");
-    };
-    },1000);
+        endQuiz();
+        return null;
+     }
+    }, 1000);
     // console.log(timerEl);
 }
 
@@ -92,10 +97,11 @@ function startTimer() {
 
 function endQuiz () {
     console.log("End");
-    submit.classList.add("hide");
     questionsContainerEl.classList.add("hide");
     welcomeEl.classList.add("hide");
-    submit.classList.remove("hide");
+    submit.classList.add("show");
+    nameEl.classList.remove("hide");
+    score.classList.remove("hide");
     console.log("End quiz");
 }
 
