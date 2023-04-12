@@ -7,11 +7,10 @@ var optionsEl = document.getElementById("options");
 var changingTimer = document.getElementById("changing-timer");
 var startBtn = document.getElementById("Start")
 var submit = document.getElementById("score");
-var nextBtn = document.getElementById("nxt-btn");
 var nameEl = document.getElementById("initials");
 var timerEl = document.getElementById("timer");
 var welcomeEl = document.querySelector(".Welcome");
-var timerCount = 60;
+var timerCount = 75;
 var timer;
 
 let currentQuestionIndex
@@ -26,9 +25,8 @@ function startQuiz () {
     questionsContainerEl.classList.remove("hide")
     console.log("next button")
     console.log("questions show")
-    quizQuestions = questions.sort()
     currentQuestionIndex = 0
-    timerCount = 60;
+    timerCount = 75;
     startTimer();
     setNextQuestion();
 }
