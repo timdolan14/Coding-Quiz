@@ -13,7 +13,7 @@ var initialField = document.getElementById("initial-field");
 var timerEl = document.getElementById("timer");
 var welcomeEl = document.querySelector(".Welcome");
 var score = document.getElementById("score");
-var timerCount = 75;
+var timerCount = 60;
 var timer;
 
 let currentQuestionIndex
@@ -29,7 +29,7 @@ function startQuiz () {
     console.log("next button")
     console.log("questions show")
     currentQuestionIndex = 0
-    timerCount = 75;
+    timerCount = 60;
     startTimer();
     setNextQuestion();
 }
@@ -45,7 +45,6 @@ function setNextQuestion() {
         choicebtn.setAttribute('value', choice);
         choicebtn.textContent = choice
         answerBtnEl.append(choicebtn);
-        startTimer();
     }
 }
 
@@ -93,7 +92,6 @@ function startTimer() {
 }
 
 //  End Quiz
-
 function endQuiz () {
     console.log("End");
     questionsContainerEl.classList.add("hide");
@@ -102,6 +100,8 @@ function endQuiz () {
     nameEl.classList.remove("hide");
     score.classList.remove("hide");
     console.log("End quiz");
+    clearInterval(timerEl);
+    console.log("End time");
 }
 
 //  Questions using the Array
