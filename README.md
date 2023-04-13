@@ -2,11 +2,11 @@
 
 ## Deployed URL
 
-https://timdolan14.github.io/LGM/
+https://timdolan14.github.io/Mets-Trivia/
 
 ## Github Repo
 
-https://github.com/timdolan14/LGM
+https://github.com/timdolan14/Mets-Trivia
 
 ## Description
 
